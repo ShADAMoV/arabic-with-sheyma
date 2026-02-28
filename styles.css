@@ -233,6 +233,7 @@ body.lang-ar .nav-languages {
     display: flex;
     align-items: center;
     gap: 16px;
+    justify-content: space-between;
 }
 
 .nav-left {
