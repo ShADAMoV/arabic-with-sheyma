@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Arabic with Sheyma Zakaria - Professional Arabic tutor with 12+ years of experience">
+    <meta name="keywords" content="Arabic tutor, learn Arabic, Arabic lessons, Quran, Islamic studies">
+    <title>Learn Arabic with Sheyma Zakaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">
+            <span class="flag">🇬🇧</span> EN
+        </button>
+        <button class="lang-btn" data-lang="ar">
+            <span class="flag">🇸🇦</span> AR
+        </button>
+        <button class="lang-btn" data-lang="ru">
+            <span class="flag">🇷🇺</span> RU
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text" data-i18n="logo">Arabic with Sheyma</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+                <li><a href="#students" data-i18n="nav.students">Students</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/201142201975" class="btn-whatsapp nav-cta" target="_blank">
+                <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span data-i18n="nav.whatsapp">WhatsApp</span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge">12+ Years of Experience</div>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.greeting">Learn Arabic with</span>
+                    <span class="highlight" data-i18n="hero.name">Sheyma Zakaria</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.description">
+                    Professional Arabic tutor offering personalized lessons for all ages and levels. 
+                    From Quran studies to modern conversation skills – your journey to fluency starts here.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/201142201975" class="btn-primary" target="_blank">
+                        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span data-i18n="hero.cta.primary">Start Learning Now</span>
+                    </a>
+                    <a href="#courses" class="btn-secondary" data-i18n="hero.cta.secondary">Explore Courses</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label" data-i18n="stats.years">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label" data-i18n="stats.countries">Countries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label" data-i18n="stats.students">Students</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-bg"></div>
+                    <img src="assets/teacher.jpg" alt="Sheyma Zakaria" class="teacher-photo">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="about.badge">About Me</span>
+                <h2 class="section-title" data-i18n="about.title">Your Trusted Arabic Tutor</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card qualifications">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="about.qualifications.title">Qualifications</h3>
+                    <ul class="about-list">
+                        <li data-i18n="about.qualifications.item1">Bachelor's from Dar Al-Uloom, Cairo University</li>
+                        <li data-i18n="about.qualifications.item2">Diploma in Language Teaching Strategies – American University in Cairo</li>
+                        <li data-i18n="about.qualifications.item3">Two Diplomas in Teaching Arabic to Non-Native Speakers</li>
+                        <li data-i18n="about.qualifications.item4">Currently pursuing Master's degree</li>
+                    </ul>
+                </div>
+                <div class="about-card experience">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="about.experience.title">Experience</h3>
+                    <ul class="about-list">
+                        <li data-i18n="about.experience.item1">12+ years of teaching experience</li>
+                        <li data-i18n="about.experience.item2">Malaysian Embassy</li>
+                        <li data-i18n="about.experience.item3">Al-Azhar University – Student Preparation Program</li>
+                        <li data-i18n="about.experience.item4">Worked with students from 20+ countries</li>
+                    </ul>
+                </div>
+                <div class="about-card approach">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="about.approach.title">My Approach</h3>
+                    <ul class="about-list">
+                        <li data-i18n="about.approach.item1">Personalized curriculum tailored to your goals</li>
+                        <li data-i18n="about.approach.item2">Interactive lessons with modern methods</li>
+                        <li data-i18n="about.approach.item3">Supportive learning environment</li>
+                        <li data-i18n="about.approach.item4">Flexible scheduling for all time zones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="courses.badge">What I Offer</span>
+                <h2 class="section-title" data-i18n="courses.title">Courses for All Ages</h2>
+                <p class="section-subtitle" data-i18n="courses.subtitle">
+                    Customized programs designed to match your age, skills, and learning objectives
+                </p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Children Courses -->
+                <div class="course-card children">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="courses.children.title">For Children</h3>
+                        <span class="course-age" data-i18n="courses.children.age">Ages 3+</span>
+                    </div>
+                    <p class="course-desc" data-i18n="courses.children.description">
+                        Special curriculum designed through interactive games, activities, and engaging lessons in a fun, modern way
+                    </p>
+                    <ul class="course-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item1">Reading & Writing Courses</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item2">Speaking Skills Development</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item3">Complete Arabic Language Skills</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item4">Grammar & Structure Foundations</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item5">Quran Reading Courses</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item6">Quran Memorization & Recitation</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.children.item7">Islamic Studies for English Speakers</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Women Courses -->
+                <div class="course-card women">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/>
+                                <path d="M12 7v5l3 3"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="courses.women.title">For Women</h3>
+                        <span class="course-age" data-i18n="courses.women.age">All Levels</span>
+                    </div>
+                    <p class="course-desc" data-i18n="courses.women.description">
+                        Comprehensive programs designed for adult learners seeking to master Arabic language skills
+                    </p>
+                    <ul class="course-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item1">Reading & Writing Courses</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item2">Conversation Art & Fluency</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item3">Advanced Grammar & Structure</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item4">Complete Language Skills Mastery</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item5">Quran Memorization & Recitation</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="courses.women.item6">Quran Reading Skills</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="courses-cta">
+                <a href="https://wa.me/201142201975" class="btn-primary btn-large" target="_blank">
+                    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span data-i18n="courses.cta">Book Your Free Consultation</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Section -->
+    <section id="students" class="students">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="students.badge">Global Reach</span>
+                <h2 class="section-title" data-i18n="students.title">Students from Around the World</h2>
+                <p class="section-subtitle" data-i18n="students.subtitle">
+                    Over 12 years, I've had the privilege of teaching students from diverse countries
+                </p>
+            </div>
+            <div class="countries-grid">
+                <div class="country-card">🇺🇸 <span data-i18n="countries.usa">USA</span></div>
+                <div class="country-card">🇨🇦 <span data-i18n="countries.canada">Canada</span></div>
+                <div class="country-card">🇬🇧 <span data-i18n="countries.uk">United Kingdom</span></div>
+                <div class="country-card">🇫🇷 <span data-i18n="countries.france">France</span></div>
+                <div class="country-card">🇩🇪 <span data-i18n="countries.germany">Germany</span></div>
+                <div class="country-card">🇦🇲 <span data-i18n="countries.armenia">Armenia</span></div>
+                <div class="country-card">🇷🇴 <span data-i18n="countries.romania">Romania</span></div>
+                <div class="country-card">🇹🇷 <span data-i18n="countries.turkey">Turkey</span></div>
+                <div class="country-card">🇷🇺 <span data-i18n="countries.russia">Russia</span></div>
+                <div class="country-card">🇲🇾 <span data-i18n="countries.malaysia">Malaysia</span></div>
+                <div class="country-card">🇮🇩 <span data-i18n="countries.indonesia">Indonesia</span></div>
+                <div class="country-card">🇰🇿 <span data-i18n="countries.kazakhstan">Kazakhstan</span></div>
+                <div class="country-card">🇦🇿 <span data-i18n="countries.azerbaijan">Azerbaijan</span></div>
+                <div class="country-card">🇬🇪 <span data-i18n="countries.georgia">Georgia</span></div>
+                <div class="country-card">🇨🇳 <span data-i18n="countries.china">China</span></div>
+                <div class="country-card">🇲🇻 <span data-i18n="countries.maldives">Maldives</span></div>
+                <div class="country-card">🇮🇳 <span data-i18n="countries.india">India</span></div>
+                <div class="country-card">🇵🇰 <span data-i18n="countries.pakistan">Pakistan</span></div>
+                <div class="country-card">🇿🇦 <span data-i18n="countries.southafrica">South Africa</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <span class="section-badge" data-i18n="contact.badge">Get in Touch</span>
+                    <h2 class="section-title" data-i18n="contact.title">Start Your Arabic Journey Today</h2>
+                    <p class="contact-text" data-i18n="contact.description">
+                        Ready to begin? Contact me directly via WhatsApp to discuss your learning goals 
+                        and schedule your first lesson. I'm here to help you succeed!
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+20 11 42201975</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <span data-i18n="contact.whatsapp">Available on WhatsApp</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/201142201975" class="btn-whatsapp btn-large" target="_blank">
+                        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span data-i18n="contact.cta">Chat on WhatsApp</span>
+                    </a>
+                </div>
+                <div class="contact-visual">
+                    <div class="visual-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text" data-i18n="logo">Arabic with Sheyma</span>
+                    <p data-i18n="footer.tagline">Your journey to Arabic fluency starts here</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#courses" data-i18n="nav.courses">Courses</a>
+                    <a href="#students" data-i18n="nav.students">Students</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/201142201975" class="social-link" target="_blank" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-i18n="footer.copyright">Arabic with Sheyma. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201142201975" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
