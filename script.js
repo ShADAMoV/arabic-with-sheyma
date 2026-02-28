@@ -351,7 +351,7 @@ function setLanguage(lang) {
     localStorage.setItem('preferredLang', lang);
 }
 
-// Initialize language buttons
+// Initialize language buttons (both desktop and mobile)
 document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const lang = btn.getAttribute('data-lang');
@@ -364,17 +364,20 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 // ========================================
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const mobileLanguages = document.querySelector('.mobile-languages');
 
 if (hamburger) {
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        mobileLanguages.classList.toggle('active');
         hamburger.classList.toggle('active');
     });
     
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
+    // Close menu when clicking on a link (but not on WhatsApp button)
+    document.querySelectorAll('.nav-menu a:not(.nav-cta-mobile)').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
+            mobileLanguages.classList.remove('active');
             hamburger.classList.remove('active');
         });
     });

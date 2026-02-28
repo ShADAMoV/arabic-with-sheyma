@@ -140,35 +140,31 @@ body.lang-ar .logo-text {
    Language Switcher
 ======================================== */
 .language-switcher {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
     display: flex;
-    gap: 8px;
-    background: var(--white);
-    padding: 6px;
+    gap: 6px;
+    background: var(--neutral-100);
+    padding: 4px;
     border-radius: var(--radius-full);
-    box-shadow: var(--shadow-lg);
 }
 
 .lang-btn {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 14px;
+    padding: 6px 12px;
     border: none;
     background: transparent;
     border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.8125rem;
+    font-weight: 600;
     color: var(--neutral-600);
     cursor: pointer;
-    transition: all var(--transition-base);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
 }
 
 .lang-btn:hover {
-    background: var(--neutral-100);
+    background: var(--white);
     color: var(--neutral-900);
 }
 
@@ -178,13 +174,37 @@ body.lang-ar .logo-text {
 }
 
 .lang-btn .flag {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
-/* RTL adjustment for language switcher */
-body.lang-ar .language-switcher {
-    right: auto;
-    left: 20px;
+/* Desktop: Language switcher in navbar */
+.nav-languages {
+    margin-right: 20px;
+}
+
+body.lang-ar .nav-languages {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* Mobile language switcher (hidden on desktop) */
+.mobile-languages {
+    display: none;
+    padding: 16px 20px;
+    gap: 10px;
+    border-top: 1px solid var(--neutral-200);
+}
+
+.mobile-languages .lang-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    background: var(--neutral-50);
+}
+
+.mobile-languages .lang-btn.active {
+    background: var(--primary);
+    color: var(--white);
 }
 
 /* ========================================
@@ -209,14 +229,28 @@ body.lang-ar .language-switcher {
 .nav-container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 16px 20px;
+    padding: 12px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
 }
 
 .logo {
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo-text {
@@ -231,7 +265,20 @@ body.lang-ar .language-switcher {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide mobile CTA in desktop menu */
+.nav-menu .nav-cta-mobile {
+    display: none !important;
 }
 
 .nav-menu a {
@@ -274,9 +321,32 @@ body.lang-ar .language-switcher {
     font-weight: 600;
     font-size: 0.9375rem;
     transition: all var(--transition-base);
+    white-space: nowrap;
+}
+
+/* Mobile CTA - hidden on desktop */
+.nav-cta-mobile {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: var(--whatsapp);
+    color: var(--white) !important;
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all var(--transition-base);
+    margin-top: 10px;
 }
 
 .nav-cta:hover {
+    background: var(--whatsapp-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-cta-mobile:hover {
     background: var(--whatsapp-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -297,6 +367,7 @@ body.lang-ar .language-switcher {
     gap: 5px;
     cursor: pointer;
     padding: 5px;
+    z-index: 1001;
 }
 
 .hamburger span {
@@ -305,6 +376,18 @@ body.lang-ar .language-switcher {
     background: var(--neutral-700);
     border-radius: var(--radius-full);
     transition: all var(--transition-base);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* ========================================
@@ -456,6 +539,8 @@ body.lang-ar .language-switcher {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1;
+    direction: ltr;
+    unicode-bidi: embed;
 }
 
 .stat-label {
@@ -711,6 +796,8 @@ body.lang-ar .language-switcher {
     border-radius: var(--radius-full);
     font-size: 0.875rem;
     font-weight: 500;
+    direction: ltr;
+    unicode-bidi: embed;
 }
 
 .course-desc {
@@ -839,6 +926,13 @@ body.lang-ar .contact-content .section-title {
     gap: 12px;
     color: var(--neutral-700);
     font-size: 1rem;
+}
+
+/* Phone numbers always LTR */
+.phone-number {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-family: 'Inter', -apple-system, sans-serif;
 }
 
 .contact-item svg {
@@ -1135,12 +1229,20 @@ body.lang-ar .floating-whatsapp {
     }
     
     .nav-menu,
-    .nav-cta {
+    .nav-cta,
+    .nav-languages,
+    .nav-right {
         display: none;
+    }
+    
+    .mobile-languages {
+        display: none;
+        flex-direction: column;
     }
     
     .hamburger {
         display: flex;
+        z-index: 1001;
     }
     
     .nav-menu.active {
@@ -1153,7 +1255,29 @@ body.lang-ar .floating-whatsapp {
         background: var(--white);
         padding: 20px;
         box-shadow: var(--shadow-lg);
-        gap: 16px;
+        gap: 12px;
+        border-bottom: 1px solid var(--neutral-200);
+    }
+    
+    .nav-menu.active li {
+        width: 100%;
+    }
+    
+    .nav-menu.active a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-menu.active .nav-cta-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .mobile-languages.active {
+        display: flex;
     }
     
     .hero {
@@ -1269,6 +1393,24 @@ body.lang-ar .floating-whatsapp {
 }
 
 /* RTL Specific Adjustments */
+body.lang-ar .nav-container {
+    flex-direction: row-reverse;
+}
+
+body.lang-ar .nav-left {
+    flex-direction: row-reverse;
+}
+
+body.lang-ar .nav-right {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+body.lang-ar .logo {
+    margin-right: 0;
+    margin-left: auto;
+}
+
 body.lang-ar .nav-menu a::after {
     right: 0;
     left: auto;
@@ -1294,4 +1436,8 @@ body.lang-ar .contact-item {
 
 body.lang-ar .footer-content {
     flex-direction: column;
+}
+
+body.lang-ar .mobile-languages {
+    text-align: center;
 }
