@@ -141,8 +141,8 @@ body.lang-ar .logo-text {
 ======================================== */
 .language-switcher {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 40px;
     z-index: 1001;
     display: flex;
     gap: 8px;
