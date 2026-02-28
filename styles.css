@@ -1359,6 +1359,20 @@ body.lang-ar .floating-whatsapp {
 }
 
 @media (max-width: 480px) {
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .lang-btn {
+        font-size: 0.5rem;
+    }
+
+    .flag {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
     .hero-cta {
         flex-direction: column;
         width: 100%;
